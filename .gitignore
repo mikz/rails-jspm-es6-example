@@ -15,3 +15,5 @@
 /log/*
 !/log/.keep
 /tmp
+
+/vendor/assets/javascripts/jspm_packages
