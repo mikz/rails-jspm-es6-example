@@ -1,3 +1,6 @@
+/*global System */
+//= require jspm_packages/system.src.js
+
 System.config({
   "baseURL": "/assets/",
   "transpiler": "babel",

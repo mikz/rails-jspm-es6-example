@@ -8,5 +8,25 @@
       "babel-runtime": "npm:babel-runtime@^5.4.3",
       "core-js": "npm:core-js@^0.9.10"
     }
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "ecmaFeatures": {
+      "blockBindings": true,
+      "forOf": true,
+      "jsx": true,
+      "modules": true,
+      "classes": true
+    },
+    "env": {
+      "browser": true,
+      "node": false
+    },
+    "rules": {
+      "global-strict": false,
+      "strict": "global",
+      "object-shorthand": true
+    }
   }
+
 }

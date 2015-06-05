@@ -1,7 +1,7 @@
 "use strict";
 
-import {Greeter} from 'greeter.js';
+import {Greeter} from "greeter.js";
 
 const greeter = new Greeter();
 
-console.log(greeter.greet('Michal'));
+console.log(greeter.greet("Michal"));
