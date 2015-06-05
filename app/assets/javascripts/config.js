@@ -15,14 +15,11 @@ System.config({
 
 System.config({
   "map": {
-    "babel": "npm:babel-core@5.5.3",
-    "babel-runtime": "npm:babel-runtime@5.5.3",
+    "babel": "npm:babel-core@5.4.7",
+    "babel-runtime": "npm:babel-runtime@5.4.7",
     "core-js": "npm:core-js@0.9.14",
     "github:jspm/nodelibs-process@0.1.1": {
       "process": "npm:process@0.10.1"
-    },
-    "npm:babel-runtime@5.5.3": {
-      "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:core-js@0.9.14": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
