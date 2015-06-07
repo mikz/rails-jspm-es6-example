@@ -1,5 +1,6 @@
 System.config({
   "baseURL": "/assets/",
+  "defaultJSExtensions": true,
   "transpiler": "babel",
   "babelOptions": {
     "optional": [
@@ -8,9 +9,8 @@ System.config({
   },
   "paths": {
     "*.js": "*.js",
-    "*": "*.js",
-    "github:*": "vendor/assets/javascripts/jspm_packages/github/*.js",
-    "npm:*": "vendor/assets/javascripts/jspm_packages/npm/*.js"
+    "github:*": "../../../vendor/assets/javascripts/jspm_packages/github/*",
+    "npm:*": "../../../vendor/assets/javascripts/jspm_packages/npm/*"
   }
 });
 
