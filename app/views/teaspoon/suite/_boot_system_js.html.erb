@@ -1,0 +1,20 @@
+<%
+   specs = @suite.spec_assets(false).map{ |s| s.gsub(/\.js.*$/, "").gsub('.self', '') }
+%>
+
+<%= javascript_include_tag @suite.helper %>
+<script type="text/javascript">
+  Teaspoon.onWindowLoad(function () {
+    // setup the Teaspoon path prefix to load /assets
+
+    // require specs by striping off the .js file extension
+    System.register('teaspoon', <%= specs.to_json.html_safe %>, function() {
+      return {
+        setters: [],
+        execute: Teaspoon.execute
+      }
+    });
+
+    System.import('teaspoon');
+  });
+</script>
