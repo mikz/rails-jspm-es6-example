@@ -1,0 +1,13 @@
+<%= javascript_include_tag @suite.helper %>
+<script type="text/javascript">
+  Teaspoon.onWindowLoad(function () {
+    System.register('teaspoon', <%= @suite.spec_assets(false).to_json.html_safe %>, function() {
+      return {
+        setters: [],
+        execute: function() { }
+      }
+    });
+
+    System.import('teaspoon').then(Teaspoon.execute, Teaspoon.execute);
+  });
+</script>
